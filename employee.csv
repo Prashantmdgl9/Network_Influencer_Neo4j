@@ -1,0 +1,55 @@
+Employee_1,Employee_2,Relation,Weight
+COO - Kenneth,CIO - Brenda,Undirected,283
+Peppa,Susan,Undirected,115
+Mary,John,Undirected,105
+Sue,Chris,Undirected,99
+Nicole,John,Undirected,83
+COO - Kenneth,Robert,Undirected,79
+Nicole,Alex,Undirected,78
+Alex,Tom,Undirected,77
+Sue,Mark,Undirected,74
+Andrew,CIO - Brenda,Undirected,71
+Andrew,COO - Kenneth,Undirected,67
+Peppa,Ingrid,Undirected,64
+Peter,COO - Kenneth,Undirected,63
+Kit,Nash,Undirected,60
+COO - Kenneth,Maya,Undirected,60
+Peppa,Alex,Undirected,55
+Alex,Nash,Undirected,55
+Alex,Susan,Undirected,52
+Peter,Susan,Undirected,47
+Peter,Nash,Undirected,47
+COO - Kenneth,Jessica,Undirected,46
+Alex,Alice,Undirected,44
+Doris,John,Undirected,42
+Andrew,Nicole,Undirected,41
+Lena,CIO - Brenda,Undirected,41
+Willy,Alex,Undirected,39
+GeorgeL,CIO - Brenda,Undirected,37
+Nash,Fiona,Undirected,37
+Mary,Nicole,Undirected,36
+Mary,Indie,Undirected,36
+COO - Kenneth,Alex,Undirected,36
+Mary,Alex,Undirected,35
+Sue,Yan,Undirected,35
+Susan,Aslani,Undirected,34
+Yakubsonn,Nash,Undirected,33
+CIO - Brenda,Maya,Undirected,33
+Paris,Alex,Undirected,32
+COO - Kenneth,John,Undirected,31
+Peter,Migehla,Undirected,31
+COO - Kenneth,Pip,Undirected,31
+COO - Kenneth,Lori,Undirected,31
+Sundar,Alex,Undirected,30
+Peppa,Lotta,Undirected,30
+COO - Kenneth,Fredrik,Undirected,30
+Matilda,CIO - Brenda,Undirected,30
+Peppa,Nash,Undirected,29
+Sue,Amanda,Undirected,29
+Grenn,Alex,Undirected,29
+Mary,COO - Kenneth,Undirected,28
+Nicole,CIO - Brenda,Undirected,28
+Robert,CIO - Brenda,Undirected,27
+Peppa,Michael,Undirected,26
+Andrew,John,Undirected,25
+Yan,Alex,Undirected,81
