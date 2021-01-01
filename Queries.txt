@@ -1,0 +1,36 @@
+LOAD CSV WITH HEADERS FROM "file:///employee.csv" AS row
+MERGE (emp1:Employee {name: row.Employee_1})
+MERGE (emp2:Employee {name: row.Employee_2})
+MERGE (emp1)-[r:INTERACTS]->(emp2) ON CREATE SET r.weight = toInteger(row.Weight)
+
+
+#Degree
+MATCH (c:Employee)
+RETURN c.name AS employee, size( (c)-[:INTERACTS]-() ) AS degree
+ORDER BY degree
+#Weighted-Degree
+MATCH (c:Employee)-[r:INTERACTS]-()
+RETURN c.name AS employee, sum(r.Weight) AS weighteddegree
+ORDER BY weighteddegree
+
+
+Page Rank 
+
+
+#Create
+CALL gds.graph.create('employee-interactions', 'Employee', {INTERACTS: {orientation: 'UNDIRECTED'}})
+
+#Stream
+CALL gds.pageRank.stream('employee-interactions') YIELD id, pgscore Return gds.util.asNode(id).name AS name, pgscore ORDER BY pgscore
+#Write
+CALL gds.pageRank.write('employee-interactions', {writeProperty: 'pageRank'})
+
+
+Community
+
+
+#Create
+CALL gds.graph.create('employee-weighted', 'Employee', {INTERACTS: {orientation: 'UNDIRECTED', properties: 'Weight'}})
+#Write
+CALL gds.labelPropagation.write('employeee-weighted', {writeProperty: 'community', maxIterations: 15, relationshipWeightProperty: 'Weight'})
+
